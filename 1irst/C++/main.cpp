@@ -38,9 +38,9 @@ public:
 };
 
 int main() {
-    BaseString b("Foo Bar");
+    BaseString baseS("Foo Bar");
     SymbolString symbolS("Spam Eggs");
-    std::cout << "Довжина базового рядка: " << b.len() << std::endl;
+    std::cout << "Довжина базового рядка: " << baseS.len() << std::endl;
     std::cout << "Довжина символьного рядка: " << symbolS.len() << std::endl;
     std::cout << "Замінемо 'g' на 'b' у символьному рядку" << std::endl;
     std::cout << "Результат: " << symbolS.replace('g', 'b') << std::endl;
