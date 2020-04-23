@@ -42,7 +42,7 @@
 [<img src="src/icons/python-nb.svg" alt="Python notebook" heigth="75px" width="75px">](Notebooks/2econd/Python.ipynb)
 #### Вихідний код
   
-[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](2econd/C_Sharp/C_Sharp/Program.cs) 
+[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](2econd/c_Sharp/c_Sharp/Program.cs) 
 [<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](2econd/C++/main.cpp) 
 [<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](2econd/Python/main.py)  
 ## Лабораторна робота 3
@@ -63,12 +63,12 @@
 ### Виконання
 #### Інтерактивне виконання
   
-[<img src="src/icons/c-sharp-nb.svg" alt="C# notebook" heigth="75px" width="75px">](Notebooks/2econd/C_Sharp.ipynb) 
-[<img src="src/icons/python-nb.svg" alt="Python notebook" heigth="75px" width="75px">](Notebooks/2econd/Python.ipynb)
+[<img src="src/icons/c-sharp-nb.svg" alt="C# notebook" heigth="75px" width="75px">](Notebooks/3hird/C_Sharp.ipynb) 
+[<img src="src/icons/python-nb.svg" alt="Python notebook" heigth="75px" width="75px">](Notebooks/3hird/Python.ipynb)
 #### Вихідний код
   
-[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](2econd/C_Sharp/C_Sharp/Program.cs) 
-[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](2econd/Python/main.py)    
+[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](3hird/C_Sharp/C_Sharp/Program.cs) 
+[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](3hird/Python/main.py)    
 ## Курсова робота
 ### Тема 
 *Дослідження механізму обробки вийняткових ситуацій*  
