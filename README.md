@@ -1,18 +1,77 @@
-# Notebooks
-Тут ви можете знайти виконання усіх лабораторних у Юпітер ноутбуках.
+# Об'єктно орієнтоване програмування
+Виконав: *Мазур Олег Володимирович*, 190997, варіант 8
+> Для перегляду коду рекомендую вибирати ноутбуки, а не файли коду, оскільки вони демонструють функціональність, та описують окремі ділянки коду
 
-## Перша Лабораторна | Дослідження механізму одиночного успадкування класів
-[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](Notebooks/1irst/C_Sharp.ipynb) 
-[<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](Notebooks/1irst/C_PlusPlus.ipynb) 
-[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](Notebooks/1irst/Python.ipynb)
-## Друга Лабораторна | Дослідження поліморфізму
-[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](Notebooks/2econd/C_Sharp.ipynb) 
-[<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](Notebooks/2econd/C_PlusPlus.ipynb) 
-[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](Notebooks/2econd/Python.ipynb)
-## Третя лабораторна | Дослідження та побудування відносин між класами
-[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](Notebooks/3hird/C_Sharp.ipynb) 
-[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](Notebooks/3hird/Python.ipynb)
-## Курсова робота | Дослідження механізму обробки вийняткових ситуацій
+## Лабораторна робота 1
+### Тема 
+*Дослідження механізму одиночного успадкування класів*
+### Завдання
+1. Дослідити механізм одиночного успадкування класів у мовах програмування *С++* та *С#*
+2. Написати програми мовами *С++* та *С#*, що демонструють застосування механізму одиночного
+успадкування класів згідно з варіантом
+
+|№    |Опис базового класу|Опис похідного класу|Завдання|
+|:---:|-------------------|--------------------|--------|
+|8    |Рядки: значення рядка, конструктор з параметром, метод обчислення довжини рядка|Символьні рядки: конструктор з параметром, метод обміну одного заданого символу на інший заданий символ, методи отримання даних об’єкту|Описати класи, об’єкт похідного класу; вивести рядок; обчислити і вивести довжину|
+### Виконання
+#### Інтерактивне виконання
+  
+[<img src="src/icons/c-sharp-nb.svg" alt="C# notebook" heigth="75px" width="75px">](Notebooks/1irst/C_Sharp.ipynb) 
+[<img src="src/icons/c-plusplus-nb.svg" alt="C++ notebook" heigth="75px" width="75px">](Notebooks/1irst/C_PlusPlus.ipynb) 
+[<img src="src/icons/python-nb.svg" alt="Python notebook" heigth="75px" width="75px">](Notebooks/1irst/Python.ipynb)
+#### Вихідний код
+  
+[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](1irst/C_Sharp/C_Sharp/Program.cs) 
+[<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](1irst/C++/main.cpp) 
+[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](1irst/Python/main.py)
+## Лабораторна робота 2
+### Тема 
+*Дослідження поліморфізму*
+### Завдання
+1. Дослідити механізм поліморфізму
+2. Дослідити віртуальні функції
+3. Написати програми мовами С++ та С# для дослідження поліморфізму згідно з варіантом  
+
+|№    |Опис базового класу|Опис похідного класу|Завдання|
+|:---:|-------------------|--------------------|--------|
+|8    |Базовий клас *"Фігури"*: віртуальні функції обчислення площі і периметра.|Похідний клас *"Прямокутники"*: координати вершин, конструктор з параметрами, віртуальні функції обчислення площі і периметра. Похідний клас "Коло": радіус, конструктор з параметром, віртуальні функції обчислення площі і периметра|Описати класи, об’єкти цих класів; обчислити і вивести площу та периметр об’єктів, використовуючи поліморфізм (вказівну/посилання базового класу)|
+#### Інтерактивне виконання
+  
+[<img src="src/icons/c-sharp-nb.svg" alt="C# notebook" heigth="75px" width="75px">](Notebooks/2econd/C_Sharp.ipynb) 
+[<img src="src/icons/c-plusplus-nb.svg" alt="C++ notebook" heigth="75px" width="75px">](Notebooks/2econd/C_PlusPlus.ipynb) 
+[<img src="src/icons/python-nb.svg" alt="Python notebook" heigth="75px" width="75px">](Notebooks/2econd/Python.ipynb)
+#### Вихідний код
+  
+[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](2econd/C_Sharp/C_Sharp/Program.cs) 
+[<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](2econd/C++/main.cpp) 
+[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](2econd/Python/main.py)  
+## Лабораторна робота 3
+### Тема 
+*Дослідження та побудування відносин між класами*
+### Мета
+Дослідити типи зав’язків між класами в ООП та їх реалізацію на прикладі мов програмування *С++* та *С#*
+### Завдання
+1. Вивчити типи відношень між класами в ООП
+2. Спроектувати об’єктно-орієнтовану модель предметної галузі згідно з варіантом, визначивши
+необхідні для цього класи та їх структуру
+3. Написати програми мовами програмування С++ та С#, що демонструють випадки створення
+класів-контейнерів з об’єктів інших класів згідно з варіантом    
+
+|№    |Опис класів|Завдання|
+|:---:|-----------|--------|
+|8    |Клас-рядок, який містить методи, необхідні для роботи методів класу-контейнера. Клас-контейнер, який є абстракцією тексту та складається з об’єктів класу-рядка та методів додавання рядка до тексту, видалення рядка з тексту, очищення тексту, приведення всіх символів до верхнього регістру, пошуку заданого рядка в тексті, що повертає кількість знайдених рядків, видалення з тексту всіх рядків заданої довжини|Створити один чи декілька об’єктів-текстів та продемонструвати їх функціональність, застосовуючи операції над текстом|
+### Виконання
+#### Інтерактивне виконання
+  
+[<img src="src/icons/c-sharp-nb.svg" alt="C# notebook" heigth="75px" width="75px">](Notebooks/2econd/C_Sharp.ipynb) 
+[<img src="src/icons/python-nb.svg" alt="Python notebook" heigth="75px" width="75px">](Notebooks/2econd/Python.ipynb)
+#### Вихідний код
+  
+[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](2econd/C_Sharp/C_Sharp/Program.cs) 
+[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](2econd/Python/main.py)    
+## Курсова робота
+### Тема 
+*Дослідження механізму обробки вийняткових ситуацій*  
 [<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](Notebooks/4ourth/C_Sharp.ipynb) 
 [<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](Notebooks/4ourth/C_PlusPlus.ipynb) 
 [<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](Notebooks/4ourth/Python.ipynb)
