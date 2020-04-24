@@ -76,7 +76,7 @@ public:
             }
             log.close();
         } else {
-            cout << "Jopa" << endl;
+            throw runtime_error("Can't log!");
         }
     }
 };
