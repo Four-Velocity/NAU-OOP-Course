@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <stdexcept>
+#include <fstream>
+
 using namespace std;
 
 class Handler
@@ -9,7 +11,7 @@ private:
     double result;
 public:
     double getResult() {
-        if (isnan(result)) throw runtime_error("NotImplementedError: Значення ще не обчислене");
+        if (isnan(result)) throw domain_error("NotImplementedError: Значення ще не обчислене");
         else return result;
     }
     double a, b, c, d;
@@ -28,14 +30,14 @@ public:
         cout << "[lg(" << first << "-" << c << ")*" << a << "]/[" << b << "+" << c << "/" << d << "-1] = ";
         second = first - c;
         cout << "[lg(" << second << ")*" << a << "]/[" << b << "+" << c << "/" << d << "-1] = ";
-        if (second<=0) throw runtime_error("ValueError: Базою логарифму не може бути <= 0");
+        if (second<=0) throw invalid_argument("ValueError: Базою логарифму не може бути <= 0");
         else {
             third = log10(second);
             cout << "[" << third << "*" << a << "]/[" << b << "+" << c << "/" << d << "-1] = ";
         }
         fourth = third * a;
         cout << "[" << fourth << "]/[" << b << "+" << c << "/" << d << "-1] = ";
-        if (d==0) throw runtime_error("ZeroDivisionError: d не може дорівнювати 0");
+        if (d==0) throw logic_error("ZeroDivisionError: d не може дорівнювати 0");
         else {
             fifth = c/d;
             cout << "[" << fourth << "]/[" << b << "+" << fifth << "-1] = ";
@@ -44,11 +46,40 @@ public:
         cout << "[" << fourth << "]/[" << sixth << "-1] = ";
         seventh = sixth - 1;
         cout << "[" << fourth << "]/[" << seventh << "] = ";
-        if (seventh==0) throw runtime_error("ZeroDivisionError: b+c/d-1 не може дорівнювати 0");
+        if (seventh==0) throw logic_error("ZeroDivisionError: b+c/d-1 не може дорівнювати 0");
+        cout << fourth / seventh << endl;
         this->result = fourth / seventh;
+    }
+
+    void logger(bool rewrite = false){
+        ofstream log;
+        if (rewrite) log.open("c++.log.txt", ios_base::out | ios_base::trunc);
+        else log.open("c++.log.txt", ios_base::app);
+        if (log.is_open()) {
+            try {
+                calculate();
+            }
+            catch (const logic_error &e) {
+                log << "e0";
+            }
+            catch (const invalid_argument &e) {
+                log << "eL";
+            }
+            catch (const char *msg) {
+                log << "e?";
+            }
+            try {
+                log << getResult() << "\r\n";
+            }
+            catch (const domain_error &e) {
+                log << "eI\r\n";
+            }
+            log.close();
+        } else {
+            cout << "Jopa" << endl;
+        }
     }
 };
 int main() {
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

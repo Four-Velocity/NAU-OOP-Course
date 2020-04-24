@@ -46,7 +46,7 @@ class Handler:
         else:
             return self.__result
 
-    def logging_implement(self, rewrite=False):
+    def logger(self, rewrite=False):
         if rewrite:
             right = 'w+'
         else:
