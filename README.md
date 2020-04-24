@@ -70,8 +70,5 @@
 [<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](3hird/C_Sharp/C_Sharp/Program.cs) 
 [<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](3hird/Python/main.py)    
 ## Курсова робота
-### Тема 
-*Дослідження механізму обробки вийняткових ситуацій*  
-[<img src="src/icons/c-sharp.svg" alt="C#" heigth="75px" width="75px">](Notebooks/4ourth/C_Sharp.ipynb) 
-[<img src="src/icons/c-plusplus.svg" alt="C++" heigth="75px" width="75px">](Notebooks/4ourth/C_PlusPlus.ipynb) 
-[<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](Notebooks/4ourth/Python.ipynb)
+
+[Перейти до розділу *курсова робота*](4ourth/)
