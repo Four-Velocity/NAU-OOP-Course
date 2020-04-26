@@ -73,4 +73,4 @@
 
 [# Перейти до розділу *курсова робота*](Notebooks/4ourth/Main.ipynb)
 
-[<img src="src/icons/All.svg" alt="Jaj" heigth="75px" width="75px" ](Notebooks/4ourth/Main.ipynb)
+[<img src="src/icons/All.svg" alt="Jaj" heigth="75px" width="75px">](Notebooks/4ourth/Main.ipynb)
