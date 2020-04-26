@@ -1,0 +1,36 @@
+@startuml
+
+start
+:Generate **n * 4** random doubles;
+:Write them to *.tsv>
+fork
+:Run C# code;
+:Read *.tsv<
+:Calculate and catch exceptions;
+:Write C#.log.csv>
+fork again
+:Run C++ code;
+:Read *.tsv<
+:Calculate and catch exceptions;
+:Write C++.log.csv>
+fork again
+:Run Python code;
+:Read *.tsv<
+:Calculate and catch exceptions;
+:Write Python.log.csv>
+endfork
+:Read Python, C#, C++ Results<
+if (C# Results == Py Res == C++ Res) then (true)
+    :This is Success;
+    stop
+else (false)
+    if (C# == Py || C# == C++ || C++ == Py) then (any true)
+        :This is Warning;
+        stop
+    else (all false)
+        :This is Failure;
+        end
+    endif
+endif
+
+@enduml
