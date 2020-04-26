@@ -71,4 +71,5 @@
 [<img src="src/icons/python.svg" alt="Python" heigth="75px" width="75px">](3hird/Python/main.py)    
 ## Курсова робота
 
-[Перейти до розділу *курсова робота*](4ourth/)
+[# Перейти до розділу *курсова робота*
+<img src="src/icons/All.svg" alt="Jaj" heigth="75px" width="75px" ](Notebooks/4ourth/Main.ipynb)
